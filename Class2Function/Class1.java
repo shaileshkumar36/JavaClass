@@ -1,7 +1,7 @@
 package JavaClass.Class2Function;
 
 import java.util.*;
-// Call by value 
+// Call by value
 public class Class1 {
     public static void CallbyValue(int arr[] ,int a){
         for(int i=0;i<arr.length;i++){
@@ -10,6 +10,8 @@ public class Class1 {
         }
         
     }
+
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -19,5 +21,7 @@ public class Class1 {
             System.out.println("arr changed value is :   "    + arr[i]);
             
         }System.out.println("a not changed value : "+a);
+
+
     }
 }

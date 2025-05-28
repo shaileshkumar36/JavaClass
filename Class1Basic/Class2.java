@@ -12,6 +12,6 @@ public class Class2 {
             sum +=i;
         }
         System.out.println(sum);
-
+        
     }
 }
