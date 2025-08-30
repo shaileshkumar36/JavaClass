@@ -14,7 +14,7 @@ public class Recursion09 {
         }
         char in = st.charAt(ind);
         if(map[in - 'a'] == true){
-            reString( st,  ind+1  ,  sb ,  map);
+            reString( st,  ind+1,  sb,  map);
         }else{
             map[in-'a'] = true;
             reString(st, ind+1 , sb.append(in), map);

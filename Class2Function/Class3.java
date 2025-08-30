@@ -11,7 +11,7 @@ public class Class3 {
             System.out.println(a);
 
         }
-        //System.out.println(b);  //we cant acction the file there becouse this element are in side the chile block 
+        //System.out.println(b);  //we cannot acction the file there becouse this element are in side the chile block 
         //elsement 
     }
 }
