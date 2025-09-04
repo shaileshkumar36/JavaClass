@@ -12,10 +12,10 @@ public class Stack07 {  //next greater Element value
 
             // step 1 while loop heare
             while(!st.isEmpty() && arr[st.peek()] <= arr[i]){
-
+                
                 st.pop();
             }
-             
+    
             // step 2  cheak the stakc empty or not;
 
             if(st.isEmpty()){

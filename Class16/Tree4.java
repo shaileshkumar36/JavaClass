@@ -64,6 +64,36 @@ public class Tree4 {
 
 
     }
+
+    public static int dis(Node root , int n){  //distance between nodes
+        if(root == null){
+            return -1;
+        }
+        if(root.data == n){
+            return 0;
+        }
+
+        int leftVal = dis(root.left, n);
+        int rightVal = dis(root.right, n);
+
+        if(leftVal == -1 && rightVal == -1){
+            return -1;
+        }else if(leftVal == -1){
+            return rightVal+1;
+        }else{
+            return leftVal+1;
+        }
+
+    }
+    public static int minData(Node root , int n1, int n2){
+
+        Node lac = lca(root, n1, n2);
+        int dia1 = dis(lac , n1);
+        int dia2 = dis(lac , n2);
+
+        return dia1+dia2;
+
+    }
     public static void main(String args[]){
         Node root = new Node(1);
         root.left = new Node(2);
@@ -75,7 +105,10 @@ public class Tree4 {
 
         //kLevel(root, 1, 2);  // caluculate the level element 
 
-        
+        System.out.println(minData(root, 01, 03));  //distance between two node ;
+
+
+
         System.out.println(lca(root, 07, 04).data);  // 
     }
 }
